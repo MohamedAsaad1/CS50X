@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort 
+
+How do you know?: because when i am calculate the time i am found gap on the time on worst case or best case
+
+sort2 uses: merge sort 
+
+How do you know?: because when i am calculate the time i am found   I found a slight difference in timing 
+
+sort3 uses: selection sort 
+
+How do you know?: because when i am calculate the time i am found the time is similar

@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    HomePage
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for sto in stock %}
+        <tr>
+          <td>{{sto.symbol}}</td>
+          <td>{{sto.name}}</td>
+          <td>{{sto.sumshares}}</td>
+          <td>{{usd(sto.price)}}</td>
+          <td>{{usd(sto.sumshares * sto.price)}}</td>
+        </tr>
+        
+        {% endfor %}
+        <tr>
+            <td>CASH</td>
+            <td colspan = "3"></td>
+            <td>{{usd(cash)}}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <td colspan = "4"></td>
+        <td>{{usd(total)}}</td>
+    </tfoot>
+</table>
+{% endblock %}
+
+
+

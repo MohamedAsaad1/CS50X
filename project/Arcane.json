@@ -1,0 +1,16 @@
+{
+    "mainfest_version": 2,
+    "name": "Arcane" ,
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["ContentArcane.js"]
+        }
+        
+    ],
+    "browser_action":{
+        "default_popup": "Po.html",
+        "default_title": "Arcane"
+    }
+}
